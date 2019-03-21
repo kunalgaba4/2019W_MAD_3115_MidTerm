@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var rememberMeSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        userRememberCheck()
     }
     
     
@@ -58,6 +58,11 @@ class LoginViewController: UIViewController {
             showAlert(title: "Error !!", message: "Id or password is Invalid")
             return
         }
+        showStudentEntry()
+    }
+    
+    func  showStudentEntry() {
+        performSegue(withIdentifier: "student_entry", sender: nil)
     }
     
     func showAlert(title: String, message: String){
