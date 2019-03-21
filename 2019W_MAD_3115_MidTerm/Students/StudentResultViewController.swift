@@ -9,13 +9,18 @@
 import UIKit
 
 class StudentResultViewController: UIViewController {
-
+    
+    var student: Student?
+    var totalMarks = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
+    
+    func calculateTotalMarks(){
+
+    }
 
     /*
     // MARK: - Navigation

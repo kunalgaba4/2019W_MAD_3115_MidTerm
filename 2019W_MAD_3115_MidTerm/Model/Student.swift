@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class student{
+class Student{
     var studentId: String?
     var studentName: String?
     var gender: String?
