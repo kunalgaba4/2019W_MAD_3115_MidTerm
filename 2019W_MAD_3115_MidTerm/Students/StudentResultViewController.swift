@@ -10,16 +10,31 @@ import UIKit
 
 class StudentResultViewController: UIViewController {
     
+    @IBOutlet weak var dob: UILabel!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var totalMarks: UILabel!
+    @IBOutlet weak var gender: UILabel!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var id: UILabel!
     var student: Student?
-    var totalMarks = 0
+    var totalMarks1 : Float = 0.0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        calculateTotalMarks()
+        updateDetails()
     }
     
+    func updateDetails(){
+        totalMarks.text = "\(totalMarks1)"
+        name.text = student?.studentName
+    }
     
     func calculateTotalMarks(){
-
+        var marks = student?.marks
+        for m in marks!{
+            totalMarks1 = totalMarks1 + m
+        }
     }
 
     /*

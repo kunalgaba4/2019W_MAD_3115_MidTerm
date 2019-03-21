@@ -69,9 +69,7 @@ class StudentEntryViewController: UIViewController, UIPickerViewDelegate, UIPick
         marks.append(sub4!)
         marks.append(sub5!)
 
-        if studentId!.isEmpty || studentId!.contains(""){
-            return
-        }
+        
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "student") as! StudentResultViewController

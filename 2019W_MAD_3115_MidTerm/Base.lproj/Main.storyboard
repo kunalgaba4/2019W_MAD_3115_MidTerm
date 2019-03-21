@@ -220,7 +220,7 @@
                         <outlet property="sub3TextField" destination="YS9-yJ-yGO" id="ypJ-a1-nxt"/>
                         <outlet property="sub4TextField" destination="s8u-0u-wqM" id="M2y-Qa-ghC"/>
                         <outlet property="sub5TextField" destination="T0z-2o-Jco" id="nqj-VJ-Po2"/>
-                        <segue destination="RM6-u0-O5j" kind="show" id="Otp-Wd-IJu"/>
+                        <segue destination="RM6-u0-O5j" kind="show" identifier="student" id="Otp-Wd-IJu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GsE-W4-z3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -230,7 +230,7 @@
         <!--Student Result View Controller-->
         <scene sceneID="Xyo-y4-NsB">
             <objects>
-                <viewController id="RM6-u0-O5j" customClass="StudentResultViewController" customModule="_019W_MAD_3115_MidTerm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="student" id="RM6-u0-O5j" customClass="StudentResultViewController" customModule="_019W_MAD_3115_MidTerm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v53-SM-imT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -288,6 +288,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XgV-9K-W0x"/>
                     </view>
+                    <connections>
+                        <outlet property="dob" destination="DRL-XX-dOM" id="vWC-En-gor"/>
+                        <outlet property="email" destination="Rhg-2x-asV" id="D2V-H2-Gcw"/>
+                        <outlet property="gender" destination="6xa-zA-yd8" id="2eN-6I-UiB"/>
+                        <outlet property="id" destination="tLO-0v-bx4" id="pve-NF-4D4"/>
+                        <outlet property="name" destination="dnl-3X-X18" id="vLv-62-g1s"/>
+                        <outlet property="totalMarks" destination="ciw-Gz-bG0" id="2wk-ye-dMD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fT2-Pq-gmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
